@@ -1,0 +1,1 @@
+:s/replace_ele/replacement_ele/g -- g is used to replace all the occurences in the line
