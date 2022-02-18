@@ -2,6 +2,7 @@
 #include<vector>
 #define nline "\n"
 #define ll long long
+#define vv vector<int> v
 using namespace std;
 ll int sq_root(ll int num)
 {
