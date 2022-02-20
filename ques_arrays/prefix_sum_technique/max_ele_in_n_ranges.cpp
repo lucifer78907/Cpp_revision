@@ -13,15 +13,17 @@ int max_occur(vi& l,vi& r,int size)
         temp.at(r.at(i)+1)--; //mark all the end of ranges as -1 (to nullify the prefix sum)
     }
     int max = temp.at(0);
+    int res = 0;
     for(int i=1;i<1000;i++)
     {
         temp.at(i) = temp.at(i)+temp.at(i-1);
         if(temp.at(i)>max)
         {
             max = temp.at(i);
+            res = i;
         }
     }
-    return max;
+    return res;
 }
 int main()
 {
